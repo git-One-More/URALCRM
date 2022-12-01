@@ -41,6 +41,9 @@ namespace URALCRM
         private void button1_Click(object sender, EventArgs e)
         {
 
+            main main = new main();
+            main.Show();
+            this.Hide();
         }
         private void button1_Focus(object sender, EventArgs e)
         {   
