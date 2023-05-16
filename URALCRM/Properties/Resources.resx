@@ -118,25 +118,85 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="menu_icon-icons.com_69502" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu_icon-icons.com_69502.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ZKZg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ZKZg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hide_icon_153458" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hide_icon_153458.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="startfon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\startfon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="scale_1200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\scale_1200.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="3643772-archive-archives-document-folder-open_113445" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3643772-archive-archives-document-folder-open_113445.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486348532-music-play-pause-control-go-arrow_80458 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486348532-music-play-pause-control-go-arrow_80458 (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3706879-control-music-sound-stop-stop-sound_108708" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3706879-control-music-sound-stop-stop-sound_108708.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="353430-checkbox-edit-pen-pencil_107516" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\353430-checkbox-edit-pen-pencil_107516.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486348532-music-play-pause-control-go-arrow_80458 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486348532-music-play-pause-control-go-arrow_80458 (1).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_icon-icons.com_69502" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_icon-icons.com_69502.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3706872-control-music-play-play-music-play-sound-start_1087171" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3706872-control-music-play-play-music-play-sound-start_1087171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="adddatabase_añadir_4282" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\adddatabase_añadir_4282.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="eye_show_filled_icon_200617" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eye_show_filled_icon_200617.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="1486348534-music-pause-stop-control-play_80459 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486348534-music-pause-stop-control-play_80459 (2).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="database_check_icon_138702" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\database_check_icon_138702.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="database_check_icon_138704" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\database_check_icon_138704.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3706883-control-music-pause-stop-stop-music_108702" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3706883-control-music-pause-stop-stop-music_108702.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486348535-music-square-stop-play-pause_80450 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486348535-music-square-stop-play-pause_80450 (1).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486348532-music-play-pause-control-go-arrow_80458 (1)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486348532-music-play-pause-control-go-arrow_80458 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486348534-music-pause-stop-control-play_80459 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486348534-music-pause-stop-control-play_80459 (1).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3706872-control-music-play-play-music-play-sound-start_108717" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3706872-control-music-play-play-music-play-sound-start_108717.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hide_icon_153458" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hide_icon_153458.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486348532-music-play-pause-control-go-arrow_80458 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486348532-music-play-pause-control-go-arrow_80458 (1)1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="database_check_icon_1387021" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\database_check_icon_1387021.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="menu-square-button_icon-icons.com_73216" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu-square-button_icon-icons.com_73216.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1904674-accept-approved-check-checked-confirm-done-tick_122524" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1904674-accept-approved-check-checked-confirm-done-tick_122524.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="startfon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\startfon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="twitterprofile_104337" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\twitterprofile_104337.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1487086362-cancel_81578" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1487086362-cancel_81578.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
     <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,8 +66,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sql.Designer.cs">
+      <DependentUpon>sql.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>
@@ -76,6 +91,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="sql.resx">
+      <DependentUpon>sql.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -109,6 +127,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\menu-square-button_icon-icons.com_73216.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486348535-music-square-stop-play-pause_80450 %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486348532-music-play-pause-control-go-arrow_80458 %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486348532-music-play-pause-control-go-arrow_80458 %281%291.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486348534-music-pause-stop-control-play_80459 %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\353430-checkbox-edit-pen-pencil_107516.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitterprofile_104337.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486348532-music-play-pause-control-go-arrow_80458 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486348534-music-pause-stop-control-play_80459 %282%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486348532-music-play-pause-control-go-arrow_80458 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3706872-control-music-play-play-music-play-sound-start_108717.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3706872-control-music-play-play-music-play-sound-start_1087171.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3706883-control-music-pause-stop-stop-music_108702.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3706879-control-music-sound-stop-stop-sound_108708.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3643772-archive-archives-document-folder-open_113445.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1904674-accept-approved-check-checked-confirm-done-tick_122524.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1487086362-cancel_81578.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

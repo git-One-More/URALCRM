@@ -63,6 +63,196 @@ namespace URALCRM.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1486348532_music_play_pause_control_go_arrow_80458__1_ {
+            get {
+                object obj = ResourceManager.GetObject("1486348532-music-play-pause-control-go-arrow_80458 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1486348532_music_play_pause_control_go_arrow_80458__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("1486348532-music-play-pause-control-go-arrow_80458 (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1486348532_music_play_pause_control_go_arrow_80458__1_2 {
+            get {
+                object obj = ResourceManager.GetObject("1486348532-music-play-pause-control-go-arrow_80458 (1)2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1486348532_music_play_pause_control_go_arrow_80458__3_ {
+            get {
+                object obj = ResourceManager.GetObject("1486348532-music-play-pause-control-go-arrow_80458 (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1486348534_music_pause_stop_control_play_80459__1_ {
+            get {
+                object obj = ResourceManager.GetObject("1486348534-music-pause-stop-control-play_80459 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1486348534_music_pause_stop_control_play_80459__2_ {
+            get {
+                object obj = ResourceManager.GetObject("1486348534-music-pause-stop-control-play_80459 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1486348535_music_square_stop_play_pause_80450__1_ {
+            get {
+                object obj = ResourceManager.GetObject("1486348535-music-square-stop-play-pause_80450 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1487086362_cancel_81578 {
+            get {
+                object obj = ResourceManager.GetObject("1487086362-cancel_81578", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1904674_accept_approved_check_checked_confirm_done_tick_122524 {
+            get {
+                object obj = ResourceManager.GetObject("1904674-accept-approved-check-checked-confirm-done-tick_122524", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _353430_checkbox_edit_pen_pencil_107516 {
+            get {
+                object obj = ResourceManager.GetObject("353430-checkbox-edit-pen-pencil_107516", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3643772_archive_archives_document_folder_open_113445 {
+            get {
+                object obj = ResourceManager.GetObject("3643772-archive-archives-document-folder-open_113445", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3706872_control_music_play_play_music_play_sound_start_108717 {
+            get {
+                object obj = ResourceManager.GetObject("3706872-control-music-play-play-music-play-sound-start_108717", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3706872_control_music_play_play_music_play_sound_start_1087171 {
+            get {
+                object obj = ResourceManager.GetObject("3706872-control-music-play-play-music-play-sound-start_1087171", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3706879_control_music_sound_stop_stop_sound_108708 {
+            get {
+                object obj = ResourceManager.GetObject("3706879-control-music-sound-stop-stop-sound_108708", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3706883_control_music_pause_stop_stop_music_108702 {
+            get {
+                object obj = ResourceManager.GetObject("3706883-control-music-pause-stop-stop-music_108702", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap adddatabase_añadir_4282 {
+            get {
+                object obj = ResourceManager.GetObject("adddatabase_añadir_4282", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap database_check_icon_138702 {
+            get {
+                object obj = ResourceManager.GetObject("database_check_icon_138702", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap database_check_icon_1387021 {
+            get {
+                object obj = ResourceManager.GetObject("database_check_icon_1387021", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap database_check_icon_138704 {
+            get {
+                object obj = ResourceManager.GetObject("database_check_icon_138704", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap eye_show_filled_icon_200617 {
             get {
                 object obj = ResourceManager.GetObject("eye_show_filled_icon_200617", resourceCulture);
@@ -116,6 +306,16 @@ namespace URALCRM.Properties {
         internal static System.Drawing.Bitmap startfon {
             get {
                 object obj = ResourceManager.GetObject("startfon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap twitterprofile_104337 {
+            get {
+                object obj = ResourceManager.GetObject("twitterprofile_104337", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
