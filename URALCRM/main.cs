@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
@@ -18,14 +19,14 @@ namespace URALCRM
 {
     public partial class main : Form
     {
+        int par = 1;
         int pk = 0;
         DateTime start = new DateTime();
         DateTime finish = new DateTime();
         DateTime daystart = new DateTime();
         DateTime dayfinish = new DateTime();
 
-        int par = 1;
-        int i = 0;
+     
         public int ms = 0, sec = 0, min = 0, hrs=0;
        public int oms = 0, osec = 0, omin = 0, ohrs = 0;
         public main()
@@ -43,6 +44,7 @@ namespace URALCRM
             groupBox1.Visible = false;
           
             dataGridView1.Visible = false;
+            dataGridView2.Visible = false;
         }
 
 
@@ -50,12 +52,19 @@ namespace URALCRM
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
+            dataGridView1.Dock = DockStyle.None;
             textBox2.Text = string.Empty;
             textBox3.Text = string.Empty;
             textBox1.Text = string.Empty;
             textBox4.Text = string.Empty;
             dataGridView1.Visible=true;
-         
+            dataGridView2.Visible = false;
+            if (par == 0)
+            {
+                toolStripButton5.Visible = false;
+                toolStripButton5.Items.Clear();
+                par = 1;
+            }
             panel1.Visible = true;
             groupBox1.Visible = true;
             //data_in_datagridview
@@ -105,22 +114,31 @@ namespace URALCRM
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-           // dataGridView1.Dock = DockStyle.Fill;
-        //    panel1.Visible = false;
-        //    if (par == 1)
-        //    {
-        //        toolStripButton5.Visible = true;
-        //        toolStripButton5.Items.Add("Запрос"+i);
-        //        par = 0;
-        //        i++;
-        //        return;
-        //    }
-        //    if (par == 0)
-        //    {
-        //        toolStripButton5.Visible = false;
-        //        toolStripButton5.Items.Clear();
-        //        par = 1;
-        //    }
+            dataGridView2.Visible = true;
+            dataGridView1.Visible = false;
+            panel1.Visible = false;
+           if (par == 1)
+         {
+                toolStripButton5.Visible = true;
+                string path = Directory.GetCurrentDirectory();
+                DirectoryInfo d = new DirectoryInfo($@"{path}");
+                FileInfo[] Files = d.GetFiles("*.dsql"); 
+                foreach (FileInfo file in Files)
+                {
+
+                   string connamearr = Path.GetFileNameWithoutExtension(file.ToString());
+                    toolStripButton5.Items.Add(connamearr);
+
+                }
+                par = 0;
+                return;
+           }
+           if (par == 0|dataGridView2.Visible==false)
+          {
+                toolStripButton5.Visible = false;
+             toolStripButton5.Items.Clear();
+                par = 1;
+          }
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)
@@ -131,6 +149,41 @@ namespace URALCRM
 
         }
 
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            if (toolStripButton5.SelectedText != "")
+            {
+                string path = Directory.GetCurrentDirectory();
+                string sqlname = toolStripButton5.SelectedItem.ToString();
+
+
+                string filetext = File.ReadAllText($@"{path}\{sqlname}.dsql");
+                string comandtext = filetext.Substring(0, filetext.IndexOf('|'));
+
+                string sqlcon = filetext.Substring(filetext.LastIndexOf('|', filetext.LastIndexOf("")));
+                sqlcon = sqlcon.Substring(1);
+
+                OleDbConnection savesqlcon = new OleDbConnection(sqlcon);
+                savesqlcon.Open();
+                DataSet ds = new DataSet();
+                OleDbDataAdapter adapter = new OleDbDataAdapter();
+                adapter.SelectCommand = new OleDbCommand(comandtext, savesqlcon);
+                adapter.Fill(ds);
+                dataGridView2.DataSource = ds.Tables[0];
+                ds.Dispose();
+                adapter.Dispose();
+                savesqlcon.Close();
+                const string caption = "Внимание!";
+                var result = MessageBox.Show("Сохранить данные хочешь, или чисто посмотреть зашел?", caption,
+                                    MessageBoxButtons.OKCancel,
+                 MessageBoxIcon.Question);
+                if (result == DialogResult.OK)
+                {
+                    MessageBox.Show("ну типо сохранил... нет)");
+                }
+            }
+
+        }
         private void timer2_Tick(object sender, EventArgs e)
         {
             osec += 1;

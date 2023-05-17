@@ -21,6 +21,7 @@ namespace URALCRM
     {
         int chose=0;
         int ind;
+        int io=0;
     protected override void OnSizeChanged(EventArgs e)
         {
             base.OnSizeChanged(e);
@@ -128,7 +129,6 @@ namespace URALCRM
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            button2.BackgroundImage = URALCRM.Properties.Resources.eye_show_filled_icon_200617;
             textBox3.UseSystemPasswordChar = true;
             Conn.conn.Open();
             OleDbCommand PUK = Conn.conn.CreateCommand();
@@ -175,6 +175,12 @@ namespace URALCRM
             }
             Conn.conn.Close();
             seqreadr.Close();
+
+            if (textBox3.Text == "Пароль")
+            {
+                textBox3.UseSystemPasswordChar = false;
+                io = 1;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -183,17 +189,23 @@ namespace URALCRM
             {
                 textBox3.UseSystemPasswordChar = false;
                 button2.BackgroundImage = URALCRM.Properties.Resources.hide_icon_153458;
+
+
             }
             else if (textBox3.UseSystemPasswordChar == false)
             {
                 textBox3.UseSystemPasswordChar = true;
-                button2.BackgroundImage = URALCRM.Properties.Resources.eye_show_filled_icon_200617;
+                button2.BackgroundImage = button2.BackgroundImage = URALCRM.Properties.Resources.eye_show;
             }
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            
+            if (io==1)
+            {
+                textBox3.UseSystemPasswordChar = true;
+                io = 0;
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)

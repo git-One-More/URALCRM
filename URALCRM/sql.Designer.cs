@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -40,9 +41,27 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.менюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.наГлавнюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.подключениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.новоеПодключениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.аToolStripMenuItem = new System.Windows.Forms.ToolStripComboBox();
+            this.импортЭкспорToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.экспортЗапросаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.имортЗапросаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.экспортДанныхToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.текстовыйДокументToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ecxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.выполнитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -66,23 +85,33 @@
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             // 
-            // button6
+            // textBox2
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.BackgroundImage = global::URALCRM.Properties.Resources.menu_square_button_icon_icons_com_73216;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(12, 12);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(32, 32);
-            this.button6.TabIndex = 20;
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2.Location = new System.Drawing.Point(188, 179);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(121, 22);
+            this.textBox2.TabIndex = 22;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.Location = new System.Drawing.Point(150, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(192, 20);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Создание подключения";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button5
             // 
-            this.button5.BackgroundImage = global::URALCRM.Properties.Resources._1487086362_cancel_81578;
+            this.button5.BackgroundImage = global::URALCRM.Properties.Resources.cancel;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -95,7 +124,7 @@
             // 
             // button4
             // 
-            this.button4.BackgroundImage = global::URALCRM.Properties.Resources._1904674_accept_approved_check_checked_confirm_done_tick_122524;
+            this.button4.BackgroundImage = global::URALCRM.Properties.Resources.accept;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -111,7 +140,7 @@
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackgroundImage = global::URALCRM.Properties.Resources._3643772_archive_archives_document_folder_open_113445;
+            this.button3.BackgroundImage = global::URALCRM.Properties.Resources.path;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(283, 139);
@@ -189,7 +218,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::URALCRM.Properties.Resources.database_check_icon_138702;
+            this.button2.BackgroundImage = global::URALCRM.Properties.Resources.showconnect;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -206,7 +235,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::URALCRM.Properties.Resources.adddatabase_añadir_4282;
+            this.button1.BackgroundImage = global::URALCRM.Properties.Resources.addconnect;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -217,29 +246,165 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // label3
+            // dataGridView1
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(150, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 20);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Создание подключения";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(188, 179);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 22);
-            this.textBox2.TabIndex = 22;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 178);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(800, 270);
+            this.dataGridView1.TabIndex = 21;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox1.Location = new System.Drawing.Point(0, 27);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(799, 150);
+            this.richTextBox1.TabIndex = 22;
+            this.richTextBox1.Text = "";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.менюToolStripMenuItem,
+            this.выходToolStripMenuItem,
+            this.выполнитьToolStripMenuItem,
+            this.toolStripTextBox1});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 24;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(53, 20);
+            this.toolStripMenuItem1.Text = "Меню";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // менюToolStripMenuItem
+            // 
+            this.менюToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.наГлавнюToolStripMenuItem,
+            this.подключениеToolStripMenuItem,
+            this.импортЭкспорToolStripMenuItem});
+            this.менюToolStripMenuItem.Name = "менюToolStripMenuItem";
+            this.менюToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.менюToolStripMenuItem.Text = "Меню";
+            // 
+            // наГлавнюToolStripMenuItem
+            // 
+            this.наГлавнюToolStripMenuItem.Name = "наГлавнюToolStripMenuItem";
+            this.наГлавнюToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.наГлавнюToolStripMenuItem.Text = "На главню";
+            this.наГлавнюToolStripMenuItem.Click += new System.EventHandler(this.наГлавнюToolStripMenuItem_Click);
+            // 
+            // подключениеToolStripMenuItem
+            // 
+            this.подключениеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.новоеПодключениеToolStripMenuItem,
+            this.аToolStripMenuItem});
+            this.подключениеToolStripMenuItem.Name = "подключениеToolStripMenuItem";
+            this.подключениеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.подключениеToolStripMenuItem.Text = "Подключение";
+            // 
+            // новоеПодключениеToolStripMenuItem
+            // 
+            this.новоеПодключениеToolStripMenuItem.Name = "новоеПодключениеToolStripMenuItem";
+            this.новоеПодключениеToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
+            this.новоеПодключениеToolStripMenuItem.Text = "Новое подключение";
+            this.новоеПодключениеToolStripMenuItem.Click += new System.EventHandler(this.новоеПодключениеToolStripMenuItem_Click);
+            // 
+            // аToolStripMenuItem
+            // 
+            this.аToolStripMenuItem.Name = "аToolStripMenuItem";
+            this.аToolStripMenuItem.Size = new System.Drawing.Size(180, 23);
+            this.аToolStripMenuItem.Text = "Подключение не выбрано";
+            this.аToolStripMenuItem.SelectedIndexChanged += new System.EventHandler(this.аToolStripMenuItem_SelectedIndexChanged);
+            // 
+            // импортЭкспорToolStripMenuItem
+            // 
+            this.импортЭкспорToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.экспортЗапросаToolStripMenuItem,
+            this.имортЗапросаToolStripMenuItem,
+            this.экспортДанныхToolStripMenuItem});
+            this.импортЭкспорToolStripMenuItem.Name = "импортЭкспорToolStripMenuItem";
+            this.импортЭкспорToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.импортЭкспорToolStripMenuItem.Text = "Импорт\\Экспорт";
+            // 
+            // экспортЗапросаToolStripMenuItem
+            // 
+            this.экспортЗапросаToolStripMenuItem.Name = "экспортЗапросаToolStripMenuItem";
+            this.экспортЗапросаToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.экспортЗапросаToolStripMenuItem.Text = "Сохранить запрос";
+            this.экспортЗапросаToolStripMenuItem.Click += new System.EventHandler(this.экспортЗапросаToolStripMenuItem_Click);
+            // 
+            // имортЗапросаToolStripMenuItem
+            // 
+            this.имортЗапросаToolStripMenuItem.Name = "имортЗапросаToolStripMenuItem";
+            this.имортЗапросаToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.имортЗапросаToolStripMenuItem.Text = "Загрузить запрос";
+            this.имортЗапросаToolStripMenuItem.Click += new System.EventHandler(this.имортЗапросаToolStripMenuItem_Click);
+            // 
+            // экспортДанныхToolStripMenuItem
+            // 
+            this.экспортДанныхToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.текстовыйДокументToolStripMenuItem,
+            this.ecxToolStripMenuItem});
+            this.экспортДанныхToolStripMenuItem.Name = "экспортДанныхToolStripMenuItem";
+            this.экспортДанныхToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.экспортДанныхToolStripMenuItem.Text = "Сохранить данные";
+            // 
+            // текстовыйДокументToolStripMenuItem
+            // 
+            this.текстовыйДокументToolStripMenuItem.Name = "текстовыйДокументToolStripMenuItem";
+            this.текстовыйДокументToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
+            this.текстовыйДокументToolStripMenuItem.Text = "Текстовый документ (.txt)";
+            this.текстовыйДокументToolStripMenuItem.Click += new System.EventHandler(this.текстовыйДокументToolStripMenuItem_Click);
+            // 
+            // ecxToolStripMenuItem
+            // 
+            this.ecxToolStripMenuItem.Name = "ecxToolStripMenuItem";
+            this.ecxToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
+            this.ecxToolStripMenuItem.Text = "excel документ (.xlsx)";
+            this.ecxToolStripMenuItem.Click += new System.EventHandler(this.ecxToolStripMenuItem_Click);
+            // 
+            // выходToolStripMenuItem
+            // 
+            this.выходToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.выходToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.выходToolStripMenuItem.Text = "Выход";
+            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            // 
+            // выполнитьToolStripMenuItem
+            // 
+            this.выполнитьToolStripMenuItem.Name = "выполнитьToolStripMenuItem";
+            this.выполнитьToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.выполнитьToolStripMenuItem.Text = "Выполнить";
+            this.выполнитьToolStripMenuItem.Click += new System.EventHandler(this.выполнитьToolStripMenuItem_Click);
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.toolStripTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.toolStripTextBox1.Enabled = false;
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.toolStripTextBox1.Size = new System.Drawing.Size(160, 20);
+            this.toolStripTextBox1.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // sql
             // 
@@ -249,14 +414,20 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.richTextBox1);
             this.Name = "sql";
             this.Text = "sql";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.sql_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -271,10 +442,27 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem менюToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem импортЭкспорToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem подключениеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem наГлавнюToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem выполнитьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripComboBox аToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem экспортЗапросаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem имортЗапросаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem экспортДанныхToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem текстовыйДокументToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ecxToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem новоеПодключениеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
     }
 }

@@ -66,6 +66,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="sql.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,14 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="sql.resx">
       <DependentUpon>sql.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,73 +108,46 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\scale_1200.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ZKZg.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eye_show_filled_icon_200617.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\hide_icon_153458.png" />
+    <None Include="Resources\eye_show.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\startfon.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\menu_icon-icons.com_69502.ico" />
+    <None Include="Resources\hide_icon_153458.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\menu-square-button_icon-icons.com_73216.png" />
+    <None Include="Resources\profile.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1486348535-music-square-stop-play-pause_80450 %281%29.ico" />
+    <None Include="Resources\start.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1486348532-music-play-pause-control-go-arrow_80458 %281%29.ico" />
+    <None Include="Resources\pause.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1486348532-music-play-pause-control-go-arrow_80458 %281%291.ico" />
+    <None Include="Resources\stop.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1486348534-music-pause-stop-control-play_80459 %281%29.ico" />
+    <None Include="Resources\addconnect.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\353430-checkbox-edit-pen-pencil_107516.png" />
+    <None Include="Resources\showconnect.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\twitterprofile_104337.png" />
+    <None Include="Resources\path.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1486348532-music-play-pause-control-go-arrow_80458 %281%29.png" />
+    <None Include="Resources\accept.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1486348534-music-pause-stop-control-play_80459 %282%29.ico" />
+    <None Include="Resources\cancel.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1486348532-music-play-pause-control-go-arrow_80458 %283%29.png" />
+    <None Include="Resources\menu.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\3706872-control-music-play-play-music-play-sound-start_108717.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\3706872-control-music-play-play-music-play-sound-start_1087171.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\3706883-control-music-pause-stop-stop-music_108702.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\3706879-control-music-sound-stop-stop-sound_108708.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\3643772-archive-archives-document-folder-open_113445.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1904674-accept-approved-check-checked-confirm-done-tick_122524.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1487086362-cancel_81578.png" />
+    <None Include="Resources\exit_icon-icons.com_70975.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

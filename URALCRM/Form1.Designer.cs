@@ -100,7 +100,7 @@ namespace URALCRM
             // 
             // button2
             // 
-            this.button2.BackgroundImage = global::URALCRM.Properties.Resources.eye_show_filled_icon_200617;
+            this.button2.BackgroundImage = global::URALCRM.Properties.Resources.eye_show;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Location = new System.Drawing.Point(272, 134);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
@@ -169,7 +169,7 @@ namespace URALCRM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::URALCRM.Properties.Resources.startfon;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(754, 466);
             this.Controls.Add(this.label1);

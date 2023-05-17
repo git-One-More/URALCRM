@@ -62,12 +62,14 @@
             this.timeN = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.toolStrip2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -127,6 +129,7 @@
             this.toolStripButton5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.Size = new System.Drawing.Size(75, 150);
+            this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
             // 
             // toolStripButton3
             // 
@@ -204,7 +207,6 @@
             // 
             this.toolStripButton7.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripButton7.AutoSize = false;
-            this.toolStripButton7.BackgroundImage = global::URALCRM.Properties.Resources._1486348532_music_play_pause_control_go_arrow_80458__1_1;
             this.toolStripButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.toolStripButton7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButton7.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -217,7 +219,6 @@
             // 
             this.toolStripButton8.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripButton8.AutoSize = false;
-            this.toolStripButton8.BackgroundImage = global::URALCRM.Properties.Resources._1486348534_music_pause_stop_control_play_80459__1_;
             this.toolStripButton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.toolStripButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButton8.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -231,7 +232,6 @@
             // 
             this.toolStripButton9.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripButton9.AutoSize = false;
-            this.toolStripButton9.BackgroundImage = global::URALCRM.Properties.Resources._1486348535_music_square_stop_play_pause_80450__1_;
             this.toolStripButton9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.toolStripButton9.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -330,7 +330,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::URALCRM.Properties.Resources.twitterprofile_104337;
+            this.pictureBox1.BackgroundImage = global::URALCRM.Properties.Resources.profile;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Location = new System.Drawing.Point(19, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -390,13 +390,13 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = global::URALCRM.Properties.Resources._1486348535_music_square_stop_play_pause_80450__1_;
+            this.button3.BackgroundImage = global::URALCRM.Properties.Resources.stop;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(333, 78);
+            this.button3.Location = new System.Drawing.Point(343, 78);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(38, 42);
+            this.button3.Size = new System.Drawing.Size(32, 32);
             this.button3.TabIndex = 19;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
@@ -416,14 +416,14 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
-            this.button1.BackgroundImage = global::URALCRM.Properties.Resources._1486348532_music_play_pause_control_go_arrow_80458__1_;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(253, 78);
+            this.button1.Location = new System.Drawing.Point(244, 78);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(38, 42);
+            this.button1.Size = new System.Drawing.Size(32, 32);
             this.button1.TabIndex = 17;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
@@ -431,16 +431,30 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::URALCRM.Properties.Resources._1486348534_music_pause_stop_control_play_80459__1_;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.BackgroundImage = global::URALCRM.Properties.Resources.pause;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(289, 78);
+            this.button2.Location = new System.Drawing.Point(294, 78);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(38, 42);
+            this.button2.Size = new System.Drawing.Size(32, 32);
             this.button2.TabIndex = 18;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(82, 0);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView2.Size = new System.Drawing.Size(717, 450);
+            this.dataGridView2.TabIndex = 7;
             // 
             // main
             // 
@@ -450,10 +464,11 @@
             this.BackgroundImage = global::URALCRM.Properties.Resources.startfon;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.toolStrip2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "main";
@@ -471,6 +486,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -508,5 +524,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripComboBox toolStripButton5;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }

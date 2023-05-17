@@ -95,7 +95,7 @@
             // 
             // button2
             // 
-            this.button2.BackgroundImage = global::URALCRM.Properties.Resources.eye_show_filled_icon_200617;
+            this.button2.BackgroundImage = global::URALCRM.Properties.Resources.eye_show;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Location = new System.Drawing.Point(272, 123);
             this.button2.Margin = new System.Windows.Forms.Padding(2);

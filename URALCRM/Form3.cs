@@ -59,7 +59,7 @@ namespace URALCRM
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            button2.BackgroundImage = URALCRM.Properties.Resources.eye_show_filled_icon_200617;
+            button2.BackgroundImage = URALCRM.Properties.Resources.eye_show;
             textBox3.UseSystemPasswordChar = true;
         }
 
@@ -73,7 +73,7 @@ namespace URALCRM
             else if (textBox3.UseSystemPasswordChar == false)
             {
                 textBox3.UseSystemPasswordChar = true;
-                button2.BackgroundImage = URALCRM.Properties.Resources.eye_show_filled_icon_200617;
+                button2.BackgroundImage = URALCRM.Properties.Resources.eye_show;
             }
         }
 

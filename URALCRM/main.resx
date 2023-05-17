@@ -220,6 +220,19 @@
   <metadata name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>304, 15</value>
   </metadata>
+  <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vwAADr8BOAVTJAAAAZJJREFUWEfNVzFOAzEQdM40aSjyBiJRkl/whfAHfkJDHfENPnHpEDyCXEsKUpCZ
+        rC0Za3O3Pi4yI40UxbszPntvz3YFuG5cs545v2mcb8EdeAjk71bGmjVjJWUaLCH8AoMvP7v6sZCxzGGu
+        SIzDHCJPEPvWTCxkLjWoJZJ23CD5TRMdQ2pRU6SHcYeET03oL6QmtFdicR588snNI8Mkzq7EnEulJU5J
+        etBLLBOwWLSESzAU5i8sMbPeanfO3yPmQxsrJb3oKdYA31ktMGUEGs0jBDotpoT0DPbscMNNJgcEnodW
+        rY/I3dPbsXVqATk1QOAW+a9avIWnto0n2WiDOfswtj7ojRXwrTaY04LS+kDslhPYaYM5rcC2LKz1QW9O
+        4KAN5iyFpT7o/S8mUHMLuvpFOOFr+K7l9TG8hlUb0QM0KrdiAmJVP0aE9XNcvM8a6UVPsQ7AjKoeSIi6
+        R7KAqofSiNUlJhHMB4/lEVUvJhFVr2Yp4uV0r5loZCxzmCsS0yC9nm/B9Hre8T8ZO7VX4/XcuSNT60xu
+        j0UJrQAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAnXIAAAEAIAC4IAEAFgAAACgAAACdAAAA5AAAAAEAIAAAAAAAqBcBAMMOAADDDgAAAAAAAAAA
