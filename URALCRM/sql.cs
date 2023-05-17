@@ -7,9 +7,11 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace URALCRM
 {
@@ -333,11 +335,103 @@ namespace URALCRM
 
         private void текстовыйДокументToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //находится в Review
-        }
+            if (dataGridView1.Rows.Count == -1)
+            {
+                MessageBox.Show("Нет данных для сохранения", "ERROR №12", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                SaveFileDialog saveDialog = new SaveFileDialog();
+                saveDialog.Filter = "Текстовый документ (*.txt)|*.txt|Все файлы (*.*)| *.*";
+                
+                saveDialog.ShowDialog();
+                IDataObject objectSave = Clipboard.GetDataObject();
+                dataGridView1.ClipboardCopyMode = DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
+                dataGridView1.SelectAll();
+                Clipboard.SetDataObject(dataGridView1.GetClipboardContent());
+                string pattern = @"^;(.*)$";
+                string str = (Clipboard.GetText(TextDataFormat.Text)).Replace(" ", " ");
+                str = Regex.Replace(str, pattern, "$1", RegexOptions.Multiline);
+                File.WriteAllText(saveDialog.FileName, str, Encoding.UTF8);
 
+                if (objectSave != null)
+                {
+                    Clipboard.SetDataObject(objectSave);
+                    MessageBox.Show("Данные сохранены в "+saveDialog.FileName, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+            }
+        }
         private void ecxToolStripMenuItem_Click(object sender, EventArgs e)
-        {//находится в Review
+        {
+            if (dataGridView1.Rows.Count == -1)
+            {
+                MessageBox.Show("Нет данных для сохранения", "ERROR №12", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                try
+                {
+                    Excel.Application excelapp = new Excel.Application();
+                    excelapp.Visible = false;
+                    excelapp.SheetsInNewWorkbook = 1;
+                    excelapp.Workbooks.Add(Type.Missing);
+                    excelapp.Worksheets.Add(Type.Missing);
+                    excelapp.Columns.ColumnWidth = 30;
+                    excelapp.Rows.RowHeight = 30;
+                    excelapp.DisplayAlerts = true;
+                    Excel.Workbook workbook = excelapp.Workbooks.Add();
+                    Excel.Worksheet worksheet = workbook.ActiveSheet;
+                    var workbook1 = (Excel.Worksheet)workbook.Worksheets[1];
+                    worksheet.Cells.NumberFormatLocal = "@";
+                    try
+                    {
+                        for (int i = 0; i < dataGridView1.Columns.Count; i++)
+                        {
+                            worksheet.Cells[1, i + 1] = dataGridView1.Columns[i].HeaderText;
+                        }
+                        for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                        {
+                            for (int j = 0; j < dataGridView1.Columns.Count; j++)
+                            {
+                                if (dataGridView1.Rows[i].Cells[j].Value != null)
+                                {
+                                    worksheet.Cells[i + 2, j + 1] = dataGridView1.Rows[i].Cells[j].Value.ToString();
+                                }
+                                else
+                                {
+                                    worksheet.Cells[i + 2, j + 1] = "";
+                                }
+                            }
+                        }
+
+
+                        SaveFileDialog saveDialog = new SaveFileDialog();
+                        saveDialog.Filter = "Excel files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                        saveDialog.FilterIndex = 1;
+
+                        if (saveDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                        {
+                            workbook.SaveAs(saveDialog.FileName);
+                            MessageBox.Show("Export Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                    catch (System.Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+                    finally
+                    {
+                        excelapp.DisplayAlerts = false;
+                        workbook.Close(false);
+                        excelapp.Quit();
+                        excelapp.DisplayAlerts = true;
+                    }
+                }
+                catch (Exception ex) { MessageBox.Show(ex.Message.ToString()); }
+
+            }
 
         }
     }
