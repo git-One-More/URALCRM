@@ -174,13 +174,7 @@ namespace URALCRM
                 adapter.Dispose();
                 savesqlcon.Close();
                 const string caption = "Внимание!";
-                var result = MessageBox.Show("Сохранить данные хочешь, или чисто посмотреть зашел?", caption,
-                                    MessageBoxButtons.OKCancel,
-                 MessageBoxIcon.Question);
-                if (result == DialogResult.OK)
-                {
-                    MessageBox.Show("ну типо сохранил... нет)");
-                }
+            
             }
 
         }

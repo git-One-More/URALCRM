@@ -95,6 +95,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(121, 22);
             this.textBox2.TabIndex = 22;
+            this.textBox2.Text = "Имя подключения";
             // 
             // label3
             // 
@@ -161,6 +162,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 24);
             this.comboBox2.TabIndex = 16;
+            this.comboBox2.Text = "Тип подключения";
             // 
             // textBox1
             // 
@@ -172,6 +174,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(96, 22);
             this.textBox1.TabIndex = 15;
+            this.textBox1.Text = "Путь к СУБД";
             // 
             // comboBox1
             // 
@@ -184,6 +187,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 14;
+            this.comboBox1.Text = "Тип СУБД";
             // 
             // label2
             // 
@@ -403,7 +407,7 @@
             this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.toolStripTextBox1.Size = new System.Drawing.Size(160, 20);
+            this.toolStripTextBox1.Size = new System.Drawing.Size(145, 20);
             this.toolStripTextBox1.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // sql
